@@ -39,7 +39,9 @@ function submit() {
     var inputAlamat = document.getElementById('alamat')
     var tbody = document.getElementById('tbody')
 
-    var data = { nama: inputNama.value, alamat: inputAlamat.value, }
+    var data = {
+	nama: inputNama.value, alamat: inputAlamat.value
+    }
     allData.push(data)
     var content = ''
     for (var i = 0; i < allData.length; i++) {
